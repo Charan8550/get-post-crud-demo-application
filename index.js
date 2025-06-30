@@ -11,7 +11,7 @@ app.get('/', (req, res)=>{
     res.send("hello from node api server");
 });
 
-mongoose.connect("mongodb+srv://charanmantri4:Kfsf1PESe9RZGN2e@backenddb.8jlqaru.mongodb.net/node-api?retryWrites=true&w=majority&appName=Backenddb")
+mongoose.connect("mongolink")
 .then(()=>{
     console.log("connected to database!");
     app.listen(3000, ()=>{
